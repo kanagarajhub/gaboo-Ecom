@@ -179,6 +179,7 @@ h1{
     font-family: var(--MONTSERRAT);
     text-transform: uppercase;
     color: var(--HEADING-COLOR);
+    font-weight: var(--FONT_BOLD);
 }
 
 .header-2{
@@ -313,10 +314,22 @@ h1{
     height: 20px;
 }
 .header-2-input-1 button:hover{
-    transform: scale(0.98);
-    color: var(--BLOCK);
+    background: var(--BORDER-COLOR);
     border: 1px solid var(--HEADING-COLOR);
 
+}
+.header-2-input-1 button:hover path {
+    fill: var(--HEADING-COLOR);
+    
+}
+.cart-btn button:hover{
+    background: var(--BORDER-COLOR);
+    border: 1px solid var(--HEADING-COLOR);
+
+}
+.cart-btn button:hover path {
+    fill: var(--HEADING-COLOR);
+    
 }
 
 .header-2-input-2{
@@ -331,19 +344,7 @@ h1{
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
-.header-2-input-2 button:hover{
-  
-    transform: scale(0.98);
-    border: 1px solid var(--HEADING-COLOR);
-    
 
-}
-.header-2-input-2 button i{
-    color: var(--BORDER-COLOR);
-}
-.header-2-input-2 button i:hover{
-    color: var(--BLOCK);
-}
 .prize-btn button{
     width: 80px;
     height: 40px;
@@ -368,6 +369,7 @@ h1{
 .popular-now  h2{
     font-size: var(--H2-SIZE);
     color: var(--HEADING-COLOR);
+    font-weight: var(--FONT_BOLD);
    
 }
 .popular-now nav{
@@ -477,6 +479,7 @@ h1{
 .new-winter-content h2{
     font-size: var(--H2-SIZE);
     color: var(--HEADING-COLOR);
+    font-weight: var(--FONT_BOLD);
     
 }
 .new-winter-content p{
@@ -549,6 +552,7 @@ h1{
 .section-4 h1{
     font-size:var(--H1-SIZE);
     color: var(--HEADER-FOOTER-FONT-COLOR);
+    font-weight: var(--FONT_BOLD);
 
 }
 .section-5{
@@ -695,6 +699,7 @@ h1{
 }
 .sec-6-rt h3{
     font-size: var(--H3-SIZE);
+    font-weight: var(--FONT_BOLD);
 }
 .sec-6-rt p{
     max-width: 450px;
@@ -940,6 +945,7 @@ footer{
 }
 .row-1 h3{
     font-size: var(--H3-SIZE);
+    font-weight: var(--FONT_BOLD);
 }
 .under-line{
     width: 150px;
@@ -1089,7 +1095,7 @@ footer{
     font-size: var(--H4-SIZE);
     font-weight: var(--FONT_BOLD);
     text-transform: uppercase;
-   
+    font-weight: var(--FONT_BOLD);
 }
 
 details summary{
@@ -1220,6 +1226,7 @@ details p{
 .new-winter-content h2{
     font-size: var(--H2-SIZE);
     color: var(--HEADING-COLOR);
+    font-weight: var(--FONT_BOLD);
     
 }
 .new-winter-content p{
