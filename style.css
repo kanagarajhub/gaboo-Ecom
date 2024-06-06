@@ -128,7 +128,6 @@
     margin: -30px 0px;
 }
 .sec-1-lt{
-    width: 100%;
     display: flex;
     flex-direction: column;
     width: 175%;
@@ -777,7 +776,7 @@ footer{
 }
 .footer-co-1 img{
     width: 150px;
-    height: 50px;
+    height: 41px;
 }
 .addres p{
      padding-right: 40px; 
@@ -792,7 +791,9 @@ footer{
     display: flex;
     flex: 2;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
+    justify-content: center;
+    
 }
 .footer-co-1 p{
     font-size: 15px;
@@ -802,11 +803,20 @@ footer{
     text-decoration: none;
     max-width: 360px;
 }
+.footer-center{
+    display: flex;
+    flex: 2;
+    gap: 30px;
+    justify-content: center;
+   
+}
 .footer-co-2{
     display: flex;
     flex: 1;
     flex-direction: column;
     gap: 20px;
+    justify-content: center;
+    
 
 }
 .footer-co-3{
@@ -814,6 +824,8 @@ footer{
     flex: 1;
     flex-direction: column;
     gap: 20px;
+    justify-content: center;
+    
 
 }
 .footer-co-4{
@@ -821,7 +833,7 @@ footer{
     flex: 2;
     flex-direction: column;
     gap: 20px;
-    margin-top: -15px;
+    justify-content: center;
 
 }
 .footer-co-4 p{
@@ -881,10 +893,7 @@ footer{
 
 }
 
-.footer-center{
-    display: flex;
-    gap: 30px;
-}
+
 
 
 /* product-css */
@@ -1289,9 +1298,9 @@ details p{
 
 }
 
-/* Styles for screens less than 1024px wide */
+/* Styles for screens less than 1200px wide */
 
-@media (max-width:1024px) {
+@media (max-width:1200px) {
 
 
 .container{
@@ -1303,8 +1312,8 @@ details p{
 .container-2{
     width:80%;
     margin:0 auto;
-    justify-content: space-between;
     gap: 30px;
+    flex-direction: column;
        
     }
 .container-2 .primary-nav ul{
@@ -1331,6 +1340,7 @@ details p{
     }
 
 .headre-2-rt{
+       
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1345,7 +1355,38 @@ details p{
 .new-winter-content p,h2{
     width: 600px;
 }
+
+.sec-1-lt{
+    width: 100%;
+    padding-bottom: 50px;
+}
+.sec-1-rt{
+    width: 100%;
+}
+.header-2{
+
+    height: 100px;
     
+    
+
+}  
+.header-2-lft{
+
+} 
+.headre-2-rt{
+    display: flex;
+    flex-direction: column;
+
+} 
+.header-2-inputs{
+
+}
+.header-2-input-1{
+
+}
+.header-2-input-2{
+
+}
 
 .sec-3-container{
     width: 80%;
@@ -1401,16 +1442,26 @@ details p{
     margin:0 auto;
 }
 .form{
+    width: 100%;
     display: flex;
+    flex-direction: column;
 }
+
 .section-6-container{
     width: 80%;
     margin:0 auto;
 } 
 
+.sec-6-lft img{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+
 .sec-6-rt{
+    flex: 1;
     gap: 20px;
-    padding:40px 90px 0px 140px; 
+    padding:40px 50px 0px 50px; 
     margin-bottom: 20px;
         
 }
@@ -1420,12 +1471,26 @@ details p{
 
     }
 .footer-colms{
-    gap: 10px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+   
     }
-.footer-co-4 button{
+.footer-co-1{
+   
     
-    width: 100%;
-    }
+}
+.footer-center{
+    text-wrap: nowrap;
+  
+}
+.footer-co-4{
+    margin-top: 15px;
+    
+    
+
+} 
 
 
 .winter-container{
@@ -1514,13 +1579,15 @@ details{
 
  /* Styles for screens less than 768px wide */
 
- @media (max-width:768px) {
+ @media (max-width:854px) {
 
     
 .container{
     width: 90%;
     height: 30px;
     margin:0 auto;
+    display: flex;
+    flex-direction: column;
        
     }
 .container-2{
@@ -1549,7 +1616,7 @@ details{
 .header-2{
     justify-content: center;
     gap: 20px;
-    height: 150px;
+    height: 180px;
    
 }
 
@@ -1577,8 +1644,14 @@ details{
        
 }
 
+.new-winter-content{
+    width: 100%;
+    margin: 0;
+    padding: 20px 0px;
+}
+
 .new-winter-content p,h2{
-    width: 600px;
+    width: 400px;
 }
     
 
@@ -1637,14 +1710,17 @@ details{
 }
 .form{
     display: flex;
-    flex-direction: column;
+    
     
 }
 .section-6-container{
     width: 80%;
     margin:0 auto;
 } 
-
+.our-col-main{
+    display: flex;
+    flex-direction: column;
+}
 .our-col-butons button{
     max-width: auto;
     width: 100%;
@@ -1654,32 +1730,68 @@ details{
 
 }
 
+.sec-6{
+    flex-direction: column;
+}
+
 .sec-6-rt{
     gap: 20px;
     padding:40px 50px 0px 50px; 
     margin-bottom: 20px;
         
 }
-.footer-container{
-    width: 90%;
-    margin:0 auto;  
 
+    .footer-container{
+        width: 90%;
+        margin:0 auto;  
+    
+        }
+    .footer-colms{
+        gap: 50px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        
+        }
+    .footer-center{
+        display: flex;
+        text-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
     }
-.footer-colms{
-    gap: 20px;
-    align-items: center;
+    
+    .footer-co-1{
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
-.footer-co-4 button{
-    width: 200px;
-    max-width: 100%;
+    .footer-co-2{
+       flex: 1;
+       align-items: start;
+    
     }
-.footer-co-4 {
-    margin-top: 12px;
+    .footer-co-3{
+        flex: 1;
+        align-items: start;
+        
+    
+    }
+    .footer-co-4 button{
+        width: 300px;
+        max-width: 100%;
+        }
+    .footer-co-4 {
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .footer-co-1{
+        margin-right: 0px;
+    }
 
-}
-.footer-co-1{
-    margin-right: -35px;
-}
 
 .winter-container{
     width: 90%;
@@ -1761,14 +1873,14 @@ details{
         margin-left:0%;
     }
 
- }
+ } 
+
 
 
  /* Styles for screens less than 425px wide */
 
-@media (max-width:425px) {
-
-      
+@media (max-width:471px) {
+    
 .container{
     width: 90%;
     height: auto;
@@ -1795,16 +1907,17 @@ details{
     
 }
 
-.logo img{
-   
-}
-
 .sec-1-lt{
+   width: 100%;
    display: flex;
    flex: 1;
    justify-content: center;
    align-items: center;
    text-align: center;
+   padding: 20px 0px;
+   margin: 0;
+   
+ 
 }
 
 .sec-1-rt{
@@ -1864,63 +1977,45 @@ details{
     width: 150px;
 }
 
-.new-winter-content p,h2{
-    width: 100px;
-    height: 100px;
-    
+.new-winter-content{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      gap: 20px;
+      padding: 20px 0px;
+
 }
-    
+
+.new-winter-content p{
+    width: 100%;
+}
+
 
 .sec-3-container{
     width: 80%;
     margin:0 auto;
        
     }
-
-.new-winter-content{
-    margin: 0px;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    text-align: center;
-     
-     }
-.new-winter-content p{
-    width: 400px;
-  
-    
-}
-.new-winter-content h2{
-    margin-left: -80%;
-    margin-bottom: -100px;
-    text-wrap: nowrap;
-    text-align: center;
-    
-   
-}
      
 .popular-now {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-wrap: nowrap;
+    margin-bottom: -30px;
+   
 }
-.popular-now h2{
-    padding: 0;
-    margin: 0;
-    margin-left: -20%;
-    margin-bottom: -50px;
-    
-
+.popular-now nav ul{
+    gap: 20px;
 }
 .papuar-container{
     width: 80%;
     margin:0 auto;
-    padding: 50px 0px 0px 0px;
         
 }
 .papular-grid {
@@ -1955,11 +2050,10 @@ details{
     display: flex;
     justify-content: center;
     text-align: center;
+   
 }
 .section-4 h2{
     text-wrap: nowrap;
-    margin-left: -60%;
-    margin-bottom: -50px;
 
 }
 
@@ -1980,21 +2074,24 @@ details{
     margin:0 auto;
 } 
 
-.our-collection h2{
-   text-wrap: nowrap;
-   margin-left: 4%;
-   margin-bottom: -50px;
+.our-col-main p{
+    width: 300px;
+}
 
+.our-collection h2{
+    
+
+ 
 }
 
 .our-col-butons{
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
 .our-col-butons button{
-    width: 150px;
+    width: 100%;
 }
 .our-col-main{
     display: flex;
@@ -2002,8 +2099,7 @@ details{
     gap: 20px;
 }
 .our-col-main p{
-    text-align: center;
-    margin-left: 5%;
+   
 
 }
 
@@ -2120,7 +2216,6 @@ details{
 .row-2{
     display: flex;
     flex-direction: column;
-    align-items: self-start;
     gap: 40px;
     
 }
