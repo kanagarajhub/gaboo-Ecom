@@ -30,6 +30,8 @@
 
 }
 
+
+
 .header-1{
     background: var(--BLOCK);
     padding: 5px 0px;
@@ -1597,6 +1599,7 @@ details{
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    position: relative;
  
        
     }
@@ -1879,6 +1882,7 @@ details{
 
  /* Styles for screens less than 425px wide */
 
+
 @media (max-width:471px) {
     
 .container{
@@ -1891,10 +1895,10 @@ details{
        
     }
 
-
 .container-2{
     width:80%;
-    margin:0 auto;   
+    margin:0 auto; 
+    display: flex;  
     }
 
 .sec-1-container{
@@ -1953,6 +1957,7 @@ details{
     }
 .headre-2-rt ul{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     padding-bottom: 25px;
     text-wrap: nowrap;
@@ -1968,7 +1973,8 @@ details{
 }
 .header-2-inputs{
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
 }
 .header-2-input-1 {
     width: 200px;
@@ -1976,6 +1982,10 @@ details{
 .header-2-input-1 input{
     width: 150px;
 }
+.prize-btn{
+    width: 100%;
+}
+
 
 .new-winter-content{
       width: 100%;
@@ -1988,6 +1998,12 @@ details{
       margin: 0;
       gap: 20px;
       padding: 20px 0px;
+
+}
+
+.new-winter-content h2{
+    display: inline-block;
+    width: 100%;
 
 }
 
@@ -2010,6 +2026,14 @@ details{
     margin-bottom: -30px;
    
 }
+
+.popular-now h2{
+    display: inline-block;
+    width: 100%;
+
+
+}
+
 .popular-now nav ul{
     gap: 20px;
 }
@@ -2053,6 +2077,8 @@ details{
    
 }
 .section-4 h2{
+    display: inline-block;
+    width: 100%;
     text-wrap: nowrap;
 
 }
@@ -2075,10 +2101,13 @@ details{
 } 
 
 .our-col-main p{
-    width: 300px;
+    width: 100%;
 }
 
 .our-collection h2{
+    display: inline-block;
+    width: 100%;
+   
     
 
  
@@ -2268,5 +2297,13 @@ details{
         text-wrap: nowrap;
     }
 
-}
 
+/* nav bar */
+
+
+
+
+
+
+
+}
