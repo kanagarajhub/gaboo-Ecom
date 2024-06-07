@@ -1922,12 +1922,15 @@ details{
 
 .header-lft{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 20px;
     padding-top: 10px;
+    gap: 50px;
 }
 .header-rt{
-    justify-content: space-around;
+    justify-content: center;
+    gap: 50px;
+
 }
 
 
@@ -2449,8 +2452,15 @@ details{
         
     }
 
+.none{
+    display: none;
+}
+.container details{
+    display: block;
+}
 
-/* nav bar */
+
+
 
 
 
