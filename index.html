@@ -19,6 +19,7 @@
     <header>
             <div class="header-1">
                 <div class="container">
+
                     <div class="header-lft">
                         <a href="mailto:gaboo@gmail.com">gaboo@mail.com</a>
                         <a href="tel:+12 345-678-456">+12 345-678-456</a>
@@ -35,6 +36,29 @@
                         <a href="#">Register</a>
 
                     </div>
+
+                    <details>
+                        <summary>contact</summary>
+                    
+                    <div class="header-lft">
+                        <a href="mailto:gaboo@gmail.com">gaboo@mail.com</a>
+                        <a href="tel:+12 345-678-456">+12 345-678-456</a>
+
+                    </div>
+
+                    <div class="header-rt">
+                        <div class="header-icons">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><img src="images/g1.png" alt=""></a>
+                        </div>
+                        <a href="#">Login</a>
+                        <a href="#">Register</a>
+
+                    </div>
+                </details>
+
+
                 </div>
             </div>
 
@@ -43,8 +67,13 @@
     <main>
         <div class="container-2  navbar" >
 
-            <div class="navbar-container container">
+
+            <input type="checkbox" id="sidebar-active">
+
                 <nav class="primary-nav" >
+                    <label for="sidebar-active" class="close-sidebar-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    </label>
                     <ul class="menu-items">
                         <li><a href="#">Woman</a></li>
                         <li><a href="#">Men</a></li>
@@ -52,19 +81,28 @@
                         <li><a href="#">Collection</a></li>
                     </ul>
                 </nav>
+
+            <label id="overlay" for="sidebar-active"></label>      
+            <div class="logo"><a href="index.html"><img src="images/Logo (2).png" alt=""></a></div> 
            
-           <div class="logo"><a href="index.html"><img src="images/Logo (2).png" alt=""></a></div> 
+                    <label for="sidebar-active" class="open-sidebar-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                    </label>
+
+                <nav class="secondary-nav ">
+                    <label for="sidebar-active" class="close-sidebar-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    </label>
+
+                    <ul class="menu-items">
+                        <li><a href="#">Spring</a></li>
+                        <li><a href="#">Summer</a></li>
+                        <li><a href="#">Fall</a></li>
+                        <li><a href="#">Winter</a></li>
+                    </ul>
+                </nav>
            
-            <nav class="secondary-nav ">
-                <ul class="menu-items">
-                   
-                    <li><a href="#">Spring</a></li>
-                    <li><a href="#">Summer</a></li>
-                    <li><a href="#">Fall</a></li>
-                    <li><a href="#">Winter</a></li>
-                </ul>
-            </nav>
-          </div>
+         
      </div>
        <!-- section Starts -->
         <section>
